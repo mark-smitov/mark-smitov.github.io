@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марк Смитов | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="snow-container" id="snow"></div>
+
+    <div class="glass-card">
+        <header class="profile">
+            <div class="avatar-container">
+                <img src="img/avatar.jpg" alt="Марк Смитов" class="avatar">
+            </div>
+            <h1 class="nickname">Марк Смитов</h1>
+            <p class="subtitle">Junior Разработчик</p>
+        </header>
+
+        <nav class="buttons-group">
+            <button class="btn" onclick="openSection('works')"><i class="fas fa-briefcase"></i> Мои работы</button>
+            <button class="btn" onclick="openSection('about')"><i class="fas fa-user"></i> Обо мне</button>
+            <button class="btn" onclick="openSection('contacts')"><i class="fas fa-paper-plane"></i> Связь со мной</button>
+        </nav>
+
+        <div class="content-scroll-area">
+            <section id="works" class="tab-content">
+                <div class="gallery-grid">
+                    <div class="work-card"><img src="img/work1.jpg"></div>
+                    <div class="work-card"><img src="img/work2.jpg"></div>
+                    <div class="work-card"><img src="img/work3.jpg"></div>
+                    <div class="work-card"><img src="img/work4.jpg"></div>
+                </div>
+            </section>
+
+            <section id="about" class="tab-content">
+                <div class="about-container">
+                    <p class="intro-text">Привет! </p>
+                    <p class="description-text">
+                        Меня зовут <strong>Марк</strong> — я Junior-разработчик, специализируюсь на создании программ под разнообразные задачи:
+                    </p>
+                    <ul class="specialization-list">
+                        <li><i class="fas fa-search-plus"></i> Парсеры и OSINT-инструменты</li>
+                        <li><i class="fas fa-code"></i> Веб-сайты (Frontend)</li>
+                        <li><i class="fas fa-robot"></i> Модули для userbot (Hikka / Heroku)</li>
+                    </ul>
+                    <div class="stack-box">
+                        <span class="stack-title">Технологический Стек:</span>
+                        <div class="stack-tags">
+                            <span class="stack-tag">Python</span>
+                            <span class="stack-tag">Go</span>
+                            <span class="stack-tag">HTML</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="tab-content">
+                <div class="contact-grid">
+                    <a href="https://t.me/vksmitov" target="_blank" class="contact-card tg">
+                        <i class="fab fa-telegram-plane"></i> <span>Telegram</span>
+                    </a>
+                    <a href="mailto:mrizzqol@gmail.com" class="contact-card gm">
+                        <i class="fas fa-envelope"></i> <span>Gmail</span>
+                    </a>
+                    <a href="https://github.com/vksmitov" target="_blank" class="contact-card gh">
+                        <i class="fab fa-github"></i> <span>GitHub</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
