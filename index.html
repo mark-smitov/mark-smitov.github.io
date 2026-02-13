@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марк Смитов | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,600&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    
+    <main class="container">
+        <aside class="profile-side">
+            <div class="glass-avatar">
+                <img src="img/avatar.jpg" alt="Марк Смитов" id="profile-img">
+            </div>
+            <div class="profile-info">
+                <h1>Марк Смитов</h1>
+                <p class="badge">Junior Developer</p>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-link active" onclick="openTab(event, 'about')">
+                    <i class="fas fa-user"></i> Обо мне
+                </button>
+                <button class="nav-link" onclick="openTab(event, 'works')">
+                    <i class="fas fa-briefcase"></i> Проекты
+                </button>
+                <button class="nav-link" onclick="openTab(event, 'contacts')">
+                    <i class="fas fa-paper-plane"></i> Контакты
+                </button>
+            </nav>
+        </aside>
+
+        <section class="content-side">
+            <div id="about" class="tab-panel active">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-grid">
+                    <p class="text">
+                        Я — <strong>Junior-разработчик</strong>, увлеченный автоматизацией и безопасностью данных. 
+                        Мой основной фундамент — создание эффективных инструментов для сбора информации (OSINT) и написание кастомных модулей для Telegram-экосистемы.
+                    </p>
+                    
+                    <div class="skills-container">
+                        <h3 class="small-title">Чем я занимаюсь:</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-desktop"></i> <span><strong>Software Development:</strong> Разработка приложений CLI/GUI под различные задачи: от системных утилит до кроссплатформенных интерфейсов.</span></li>
+                            <li><i class="fas fa-microchip"></i> <span><strong>Automation:</strong> Парсеры, боты и OSINT-скрипты.</span></li>
+                            <li><i class="fas fa-layer-group"></i> <span><strong>Userbots:</strong> Создание модулей для Hikka и Heroku.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="works" class="tab-panel">
+                <h2 class="section-title">Проекты</h2>
+                <div class="projects-grid">
+                    <div class="project-card terminal-style">
+                        <div class="terminal-header">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            <span class="terminal-title">Telegram Radar — vksmitov</span>
+                        </div>
+                        <img src="img/work1.jpg" alt="Telegram Radar">
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacts" class="tab-panel">
+                <h2 class="section-title">Связь</h2>
+                <div class="links-list">
+                    <a href="https://t.me/vksmitov" class="social-card telegram" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                        <div class="social-info">
+                            <span class="platform">Telegram</span>
+                            <span class="username">@vksmitov</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/mark-smitov" class="social-card github" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div class="social-info">
+                            <span class="platform">GitHub</span>
+                            <span class="username">vksmitov</span>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:mrizzqol@gmail.com" class="social-card email">
+                        <i class="fas fa-envelope"></i>
+                        <div class="social-info">
+                            <span class="platform">Gmail</span>
+                            <span class="username">mrizzqol@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img id="modal-content" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
